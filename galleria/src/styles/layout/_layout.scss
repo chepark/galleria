@@ -1,0 +1,17 @@
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 769px;
+  max-width: 1440px;
+  margin: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+@import "../abstracts/variables";
+h1 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.subhead1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.subhead2 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.link1 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.5px;
+  color: $dark-gray;
+}
+
+.link2 {
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 2pxb;
+  color: $dark-gray;
+}

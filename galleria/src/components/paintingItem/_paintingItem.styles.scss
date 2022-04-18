@@ -1,0 +1,12 @@
+.paintingItem {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.paintingItem > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}

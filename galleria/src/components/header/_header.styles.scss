@@ -1,0 +1,16 @@
+@import "../../styles/abstracts/variables";
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-line {
+  display: block;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid $gray;
+  margin-top: 20px;
+}

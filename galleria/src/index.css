@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+  font-size: 14px;
+}
+
+body,
+h1,
+h2,
+h3,
+.link1,
+.link2,
+.subhead1,
+.subhead2 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.subhead1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.subhead2 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.link1 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.5px;
+  color: #7d7d7d;
+}
+
+.link2 {
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 2pxb;
+  color: #7d7d7d;
+}
+
+body {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  min-width: 769px;
+  max-width: 1440px;
+  margin: 20px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */
