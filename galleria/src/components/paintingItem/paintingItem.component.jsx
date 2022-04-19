@@ -15,6 +15,10 @@ const PaintingItem = ({ painting }) => {
   return (
     <div className="paintingItem">
       <img src={require("../../" + thumbnail + ".jpg")} alt={name}></img>
+      <div className="shadow">
+        <h2>{name}</h2>
+        <p className="subhead1">{artist.name}</p>
+      </div>
     </div>
   );
 };
