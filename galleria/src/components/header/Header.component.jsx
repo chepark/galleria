@@ -18,7 +18,6 @@ const Header = () => {
             fill="black"
           />
         </svg>
-
         <div className="header-slideButton link1">START SLIDESHOW</div>
       </header>
       <hr className="header-line"></hr>

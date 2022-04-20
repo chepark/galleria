@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./_paintingItem.styles.scss";
+import deburr from "lodash/deburr";
 
 const PaintingItem = ({ painting }) => {
   let {
@@ -10,7 +10,7 @@ const PaintingItem = ({ painting }) => {
   } = painting;
 
   thumbnail = thumbnail.slice(2, thumbnail.lenigth).slice(0, -4);
-  let paramName = name.replace(/\s+/g, "-").toLowerCase();
+  let paramName = deburr(name.replace(/\s+/g, "-").toLowerCase());
 
   return (
     <>
