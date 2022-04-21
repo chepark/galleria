@@ -78,10 +78,8 @@ body {
 }
 
 .container {
-  min-width: 769px;
-  max-width: 1440px;
+  width: 100%;
   margin: 20px;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
