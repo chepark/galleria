@@ -1,0 +1,60 @@
+@import "../../styles/abstracts/variables";
+
+.slide-footer-wrapper {
+  margin-top: 150px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+
+// .footer-breaker {
+//   display: flex;
+//   flex-direction: row;
+
+//   hr {
+//     display: inline-block;
+//   }
+// }
+
+.progress-bar {
+  height: 2px;
+  border-style: none;
+  border-bottom: 2px solid $gray;
+}
+
+.progress-done {
+  height: 2px;
+
+  border-bottom: 2px solid $dark-gray;
+}
+
+.footer-content {
+  max-width: 1440px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}

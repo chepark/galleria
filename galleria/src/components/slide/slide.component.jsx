@@ -7,11 +7,11 @@ import Header from "../header/Header.component";
 import data from "../../assets/data.json";
 import SlideImage from "../slideImage/SlideImage.component";
 import SlideDescription from "../slideDescription/SlideDescription.component";
+import SlideFooter from "../slideFooter/SlideFooter.component";
 
 const Slide = () => {
   const { paintingTitle } = useParams();
   let [paintingData, setPaintingData] = useState();
-  let isDataLoaded = false;
 
   useEffect(() => {
     const filterPaintingData = data.find((elem) => {
@@ -20,27 +20,26 @@ const Slide = () => {
       );
     });
     setPaintingData(filterPaintingData);
-  }, [isDataLoaded]);
-
-  if (paintingData) {
-    isDataLoaded = true;
-  }
+  }, [paintingTitle]);
 
   return (
-    <div className="container">
-      <Header />
-      <div className="slide-wrapper">
-        {paintingData && (
-          <>
-            <SlideImage
-              paintingTitle={paintingTitle}
-              paintingData={paintingData}
-            />
-            <SlideDescription paintingData={paintingData} />
-          </>
-        )}
+    <>
+      <div className="container">
+        <Header />
+        <div className="slide-wrapper">
+          {paintingData && (
+            <>
+              <SlideImage
+                paintingTitle={paintingTitle}
+                paintingData={paintingData}
+              />
+              <SlideDescription paintingData={paintingData} />
+            </>
+          )}
+        </div>
       </div>
-    </div>
+      {paintingData ? <SlideFooter paintingData={paintingData} /> : null}
+    </>
   );
 };
 
