@@ -1,0 +1,40 @@
+@import "../../styles/abstracts/variables";
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-closeBtn__wrapper {
+  position: relative;
+  height: 40px;
+}
+
+.modal-closeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  letter-spacing: 0.3rem;
+  &:hover {
+    cursor: pointer;
+  }
+}

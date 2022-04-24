@@ -11,7 +11,10 @@ import SlideFooter from "../slideFooter/SlideFooter.component";
 
 const Slide = () => {
   const { paintingTitle } = useParams();
-  let [paintingData, setPaintingData] = useState();
+  const [paintingData, setPaintingData] = useState();
+  const [isOpen, setIsOpen] = useState(false);
+
+  console.log(isOpen);
 
   useEffect(() => {
     const filterPaintingData = data.find((elem) => {
@@ -20,7 +23,7 @@ const Slide = () => {
       );
     });
     setPaintingData(filterPaintingData);
-  }, [paintingTitle]);
+  }, [isOpen, paintingTitle]);
 
   return (
     <>
@@ -32,6 +35,8 @@ const Slide = () => {
               <SlideImage
                 paintingTitle={paintingTitle}
                 paintingData={paintingData}
+                isModalOpen={setIsOpen}
+                open={isOpen}
               />
               <SlideDescription paintingData={paintingData} />
             </>

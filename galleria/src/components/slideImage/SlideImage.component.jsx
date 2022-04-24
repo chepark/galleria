@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 import "./_slideImage.styles.scss";
 
-const SlideImage = ({ paintingData, paintingTitle }) => {
+import Modal from "../modal/Modal.component";
+
+const SlideImage = ({ paintingData, paintingTitle, isModalOpen, open }) => {
   const { name, artist } = paintingData;
 
   return (
@@ -14,7 +17,7 @@ const SlideImage = ({ paintingData, paintingTitle }) => {
           src={require(`../../assets/${paintingTitle}/gallery.jpg`)}
           alt={paintingTitle}
         />
-        <button className="image-gallery-btn">
+        <button className="image-gallery-btn" onClick={() => isModalOpen(true)}>
           <span className="material-icons">open_with</span>
           VIEW IMAGE
         </button>
@@ -26,6 +29,24 @@ const SlideImage = ({ paintingData, paintingTitle }) => {
           alt={artist.name}
         />
       </div>
+      {open && (
+        <Modal>
+          <div className="modal">
+            <div className="modal-closeBtn__wrapper">
+              <button
+                className="modal-closeBtn"
+                onClick={() => isModalOpen(false)}
+              >
+                CLOSE
+              </button>
+            </div>
+            <img
+              src={require(`../../assets/${paintingTitle}/hero-large.jpg`)}
+              alt={paintingTitle}
+            />
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };
