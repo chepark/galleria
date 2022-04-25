@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./_slideDescription.styles.scss";
 
 const SlideDescription = ({ paintingData }) => {
@@ -10,7 +11,11 @@ const SlideDescription = ({ paintingData }) => {
       <div className="description__main">
         <p>{description}</p>
       </div>
-      <div className="slide-home-link link1">GO TO SOURCE</div>
+      <div className="slide-home-link link1">
+        <Link to="/" style={{ color: "inherit" }}>
+          GO TO SOURCE
+        </Link>
+      </div>
     </div>
   );
 };

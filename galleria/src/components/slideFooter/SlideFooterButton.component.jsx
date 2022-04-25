@@ -8,9 +8,20 @@ const SlideFooterButton = ({ paintingIndex }) => {
   let [nextSlide, setNextSlide] = useState();
 
   useEffect(() => {
-    setPrevSlide(data[paintingIndex - 1]);
-    setNextSlide(data[paintingIndex + 1]);
+    if (paintingIndex === 0) {
+      setPrevSlide(data[data.length - 1]);
+    } else {
+      setPrevSlide(data[paintingIndex - 1]);
+    }
+
+    if (paintingIndex === data.length - 1) {
+      setNextSlide(data[0]);
+    } else {
+      setNextSlide(data[paintingIndex + 1]);
+    }
   }, [paintingIndex]);
+
+  console.log(prevSlide);
 
   return (
     <div className="footer-button">

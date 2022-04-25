@@ -1,7 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./_header.styles.scss";
+import data from "../../assets/data.json";
 
 const Header = () => {
+  const location = useLocation();
+
+  const firstSlide = data[0].name.replace(/\s+/g, "-").toLowerCase();
+
+  const startSlideShowBtn = (
+    <Link
+      to={`/slide/${firstSlide}`}
+      style={{ color: "inherit", textDecoration: "none" }}
+    >
+      START SLIDESHOW
+    </Link>
+  );
+  const stopSlideShowBtn = (
+    <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+      STOP SLIDESHOW
+    </Link>
+  );
+
   return (
     <>
       <header>
@@ -21,7 +40,9 @@ const Header = () => {
             />
           </svg>
         </Link>
-        <div className="header-slideButton link1">START SLIDESHOW</div>
+        <div className="header-slideButton link1">
+          {location.pathname === "/" ? startSlideShowBtn : stopSlideShowBtn}
+        </div>
       </header>
       <hr className="header-line"></hr>
     </>

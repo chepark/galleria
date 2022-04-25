@@ -14,8 +14,6 @@ const Slide = () => {
   const [paintingData, setPaintingData] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(isOpen);
-
   useEffect(() => {
     const filterPaintingData = data.find((elem) => {
       return (
