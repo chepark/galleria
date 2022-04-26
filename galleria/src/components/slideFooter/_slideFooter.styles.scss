@@ -2,19 +2,7 @@
 
 .slide-footer-wrapper {
   margin-top: 150px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
 }
-
-// .footer-breaker {
-//   display: flex;
-//   flex-direction: row;
-
-//   hr {
-//     display: inline-block;
-//   }
-// }
 
 .progress-bar {
   height: 2px;
@@ -29,13 +17,15 @@
 }
 
 .footer-content {
-  max-width: 1440px;
+  max-width: 1360px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .footer-meta {
@@ -57,4 +47,10 @@
   flex-direction: row;
   justify-content: center;
   gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .slide-footer-wrapper {
+    margin-top: 0;
+  }
 }

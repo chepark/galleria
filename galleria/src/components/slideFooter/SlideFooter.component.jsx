@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useProgressDoneWidth } from "../../hooks/useProgressDoneWidth.hook";
 import { useWindowSize } from "../../hooks/useWindowSize.hook";
@@ -32,7 +31,6 @@ const SlideFooter = ({ paintingData }) => {
             initial={{ width: 0 }}
             animate={{ width: progressDoneWidth }}
             transition={{ duration: 0.3 }}
-            // style={{ width: progressDoneWidth }}
           ></motion.div>
         ) : null}
       </div>

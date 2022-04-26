@@ -3,3 +3,9 @@ $dark-gray: #7d7d7d;
 $gray: #e5e5e5;
 $light-gray: #f3f3f3;
 $white: #ffffff;
+
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 720px,
+  "desktop": 1300px,
+);

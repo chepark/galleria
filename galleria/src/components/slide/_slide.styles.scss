@@ -1,13 +1,26 @@
+@import "../../styles/abstracts/mixins";
+
 .slide-wrapper {
   display: grid;
   grid-template-columns: 60% 40%;
-  // grid-template-rows: 90% 10%;
-  gap: 50px;
-  // align-content: center;
-
   width: 100%;
   height: 100%;
   margin-top: 3rem;
+}
 
-  // position: relative; // SlideFooter position: absolute
+@media screen and (max-width: 1300px) {
+  .slide-wrapper {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .slide-wrapper {
+  }
 }

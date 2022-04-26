@@ -5,6 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 20px;
 }
 
 .header-line {
@@ -17,4 +18,20 @@ header {
 
 .header-slideButton {
   text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  svg * {
+    width: 100%;
+    height: 100%;
+  }
+
+  header svg {
+    width: 100px;
+    height: 50px;
+  }
+
+  .header-slideButton a {
+    font-size: 9px;
+  }
 }

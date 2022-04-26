@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import "./_slideImage.styles.scss";
 
 import Modal from "../modal/Modal.component";
+import { useWindowSize } from "../../hooks/useWindowSize.hook";
 
 const SlideImage = ({ paintingData, paintingTitle, isModalOpen, open }) => {
   const { name, artist } = paintingData;
+  const [innerHeight, innerWidth] = useWindowSize();
 
   return (
     <div className="slide-image">
