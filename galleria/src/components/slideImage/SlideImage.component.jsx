@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./_slideImage.styles.scss";
 
 import Modal from "../modal/Modal.component";
@@ -16,7 +15,11 @@ const SlideImage = ({ paintingData, paintingTitle, isModalOpen, open }) => {
       </div>
       <div className="image-gallery">
         <img
-          src={require(`../../assets/${paintingTitle}/gallery.jpg`)}
+          src={
+            innerWidth > 720
+              ? require(`../../assets/${paintingTitle}/gallery.jpg`)
+              : require(`../../assets/${paintingTitle}/hero-small.jpg`)
+          }
           alt={paintingTitle}
         />
         <button className="image-gallery-btn" onClick={() => isModalOpen(true)}>
@@ -43,7 +46,12 @@ const SlideImage = ({ paintingData, paintingTitle, isModalOpen, open }) => {
               </button>
             </div>
             <img
-              src={require(`../../assets/${paintingTitle}/hero-large.jpg`)}
+              className="modal-image"
+              src={
+                innerWidth > 1200
+                  ? require(`../../assets/${paintingTitle}/hero-large.jpg`)
+                  : require(`../../assets/${paintingTitle}/gallery.jpg`)
+              }
               alt={paintingTitle}
             />
           </div>

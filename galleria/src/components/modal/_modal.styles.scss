@@ -19,6 +19,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .modal-closeBtn__wrapper {
   position: relative;
   height: 40px;
@@ -36,5 +37,16 @@
   letter-spacing: 0.3rem;
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-image {
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

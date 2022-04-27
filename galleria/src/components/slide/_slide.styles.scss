@@ -8,7 +8,7 @@
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .slide-wrapper {
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr);
@@ -22,5 +22,10 @@
 
 @media screen and (max-width: 720px) {
   .slide-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 1;
   }
 }
