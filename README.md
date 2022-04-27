@@ -6,23 +6,39 @@
 
 ## ⚙️ Features
 
-- Take user inputs and calculate tip and bill to split with friends
-- Responsive design
+- Play the slide show, checking the flow with progress bar on the underside.
+- View a large image of a painting with a modal.
+- Responsive design for mobile, table, and PC.
 
 ## 📌 Lessons from the project
 
-- To learn styling the `<form>` element and the `<input>` element
-- To use Using media queries in Sass
-- To create a working product by matching the [UI design](https://www.figma.com/file/5PgWPwUclOBDelMDqlYfIl/tip-calculator-app?node-id=0%3A1) as closely as possible.
+- Different usage of Flex and Grid in CSS.
+- Building own hooks in React.
+- Using Portals in React to create Modals.
+- Using Framer Motion for animation effects.
+- Deploying the project with Netlify
+
+## 👩🏻‍🔧 Future Improvement
+
+- Improve the image loading speed in the slide page.
+- Change css media query code into scss.
 
 ## 💻 Technologies
 
 - HTML
+- CSS
 - Sass
-- JavaScript
+- React
+- Netlify
 
 ## 🔨 Set up
-- Download and install Git
-- `> git clone https://github.com/chepark/splitter.git`
-- Open `index.html` file on a browser.
 
+- Download and install Git
+- `> git clone https://github.com/chepark/galleria.git`
+- `> cd galleria`
+- `> npm install`
+- `> npm start`
+
+## 🔗 Link
+
+https://soft-pothos-04baa8.netlify.app
