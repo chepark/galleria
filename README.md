@@ -6,7 +6,7 @@
 
 ## ⚙️ Features
 
-- Play the slide show, checking the flow with progress bar on the underside.
+- Play the slide show, checking the flow with progress bar on the downside.
 - View a large image of a painting with a modal.
 - Responsive design for mobile, table, and PC.
 
@@ -22,6 +22,7 @@
 
 - Improve the image loading speed in the slide page.
 - Change css media query code into scss.
+- Edit some styles on the slide page for a large screen (width > 1300px). Lower the progress bar Y position.   
 
 ## 💻 Technologies
 
