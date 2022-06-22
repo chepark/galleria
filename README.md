@@ -1,7 +1,7 @@
 # Galleria
 
 <p align="center">
-  <img width="460" height="300" src="./assets/demo.gif">
+  <img width="460" height="auto" src="./assets/demo.gif">
 </p>
 
 ## ⚙️ Features
