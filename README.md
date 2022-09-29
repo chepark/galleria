@@ -25,12 +25,11 @@
 - Edit some styles on the slide page for a large screen (width > 1300px). Lower the progress bar Y position.   
 
 ## 💻 Technologies
-
+- React
+- Netlify
 - HTML
 - CSS
 - Sass
-- React
-- Netlify
 
 ## 🔨 Set up
 
